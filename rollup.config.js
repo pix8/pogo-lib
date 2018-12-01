@@ -31,7 +31,7 @@ export default {
 		exclude: 'node_modules/**'
 	},
 
-	//treat as external dependencies and do not bundled with library
+	//treat as external dependencies and do not bundled with module
 	external: [
 		'react',
 		'react-dom',
