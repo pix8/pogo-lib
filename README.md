@@ -25,7 +25,7 @@ cd my-library/example/react
 cd my-library/example/vue
 npm install
 npm link package-name
-//npm link package-name --preserve-symlinks
+//npm link package-name --preserve-symlinks ??
 npm start
 ```
 Note: both 'example' directories are just shells of their respective CLI derived host environments.
