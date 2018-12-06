@@ -1,5 +1,5 @@
 {
-  "name": "@pix8/pogo-lib",
+  "name": "@pix8/pogo-example-module",
   "version": "0.0.0-alpha",
   "description": "",
   "author": "Jonathan Brincat <jb@pix8.co.uk> (http://pix8.co.uk)",
@@ -24,7 +24,6 @@
     "release:major": "npm run version:major && git push --follow-tags origin develop"
   },
   "dependencies": {
-    "@pix8/ui-core": "0.0.1",
     "lodash": "^4.17.10"
   },
   "devDependencies": {
@@ -54,7 +53,7 @@
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
-    "react": "^0.14.9 || ^15.0.0 || ^16.0.0",
+    "react": "^0.14.9 || ^15.5.0 || ^16.0.0",
     "react-dom": "^0.14.9 || ^15.0.0 || ^16.0.0",
     "vue": "^2.0.0"
   },
