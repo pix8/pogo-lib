@@ -1,25 +1,20 @@
 import React, { Component } from 'react'
-//import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
-//import logo from './logo.svg'
-//import './App.css'
+import path from './svg/logo__react.svg'
 
 // import {
-// 	CarouselFoobar
+// 	StyledLogo
 // } from './Logo.styles'
 
 
 export default class Logo extends Component {
+	
+	static propTypes = {}
 
 	render() {
 		return (
-			<div className='logo__react'>
-				<h1>Hello from React</h1>
-				{/*<img src={logo} className="App-logo" alt="logo" />*/}
-			</div>
+			<img className='logo__react grid__logo' src="./svg/logo__react.svg" />
 		)
 	}
 }
-
-
-//Logo.propTypes = {}

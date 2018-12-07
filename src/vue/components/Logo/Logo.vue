@@ -1,10 +1,9 @@
 <template lang="pug">
-	.logo__vue
-		h1 Hello from Vue
+	img.logo__vue.grid__logo(src="./svg/logo__vue.svg")
 </template>
 
-
 <script>
+	import logo from './svg/logo__vue.svg'
 
 	export default {		
 		name: 'Logo',
@@ -22,7 +21,6 @@
 		methods: {}
 	}
 </script>
-
 
 <style lang="scss" scoped>
 </style>

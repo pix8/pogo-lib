@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom'
 import * as UI from '@pix8/pogo-example-module'
 
 
-let test = document.querySelectorAll('logo');
+let test = document.querySelectorAll('reactlogo');
 
 if(test.length) {
 	test.forEach((el, i, collection) => {
