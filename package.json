@@ -1,0 +1,78 @@
+{
+  "name": "@pix8/ui-accordion_gh-pages",
+  "version": "0.0.12",
+  "description": "Dependency-free JavaScript UI accordion component(a11y compliant)",
+  "author": "Jonathan Brincat <jb@pix8.co.uk> (http://pix8.co.uk)",
+  "homepage": "https://pix8.github.io/ui-accordion/",
+  "keywords": [
+    "accordion",
+    "ui component",
+    "javascript",
+    "accessible",
+    "a11y",
+    "aria"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pix8/ui-accordion.git"
+  },
+  "files": [],
+  "main": "index.js",
+  "module": "index.es.js",
+  "jsnext:main": "index.es.js",
+  "scripts": {
+    "postinstall": "npm install @pix8/ui-accordion --save",
+    "start": "rollup -c -w & JEKYLL_ENV=development bundle exec jekyll serve",
+    "start2": "webpack -w --mode 'development' & JEKYLL_ENV=development bundle exec jekyll serve",
+    "jekyll": "JEKYLL_ENV=development bundle exec jekyll serve",
+    "rollup": "rollup -c -w",
+    "webpack": "webpack -c -w",
+    "test": "jest --env=jsdom",
+    "build": "rollup -c && JEKYLL_ENV=production bundle exec jekyll build",
+    "build2": "webpack -c && JEKYLL_ENV=production bundle exec jekyll build"
+  },
+  "dependencies": {
+    "@pix8/ui-accordion": "0.0.13",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-vue": "^2.0.2",
+    "chokidar": "^2.0.4",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "rollup": "^1.6.0",
+    "rollup-plugin-alias": "^1.5.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-pug": "^1.1.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-url": "^2.2.0",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
