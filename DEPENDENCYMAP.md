@@ -11,14 +11,13 @@ Keeping tabs on the dependency tree so I know what's using what and can hopefull
 		rollup-plugin-babel
 			@babel/core
 				@babel/preset-env
-				@babel/plugin-transform-runtime
-				@babel/plugin-external-helpers
 				@babel/preset-react
+				@babel/plugin-external-helpers
+				@babel/plugin-transform-runtime
 		rollup-plugin-vue
 			vue-template-compiler
 		rollup-plugin-pug
-			pug
-			pug-plain-loader
+			pug * double-check what is using this
 		rollup-plugin-scss
 			node-sass
 		rollup-plugin-postcss
@@ -31,12 +30,17 @@ Keeping tabs on the dependency tree so I know what's using what and can hopefull
 		babel-loader
 			@babel/core
 				@babel/preset-env
-				@babel/preset-react
-		vue-loader
-			vue-template-compiler
+				@babel/preset-react			
 	@storybook/vue
 		babel-loader
 			@babel/core
 				@babel/preset-env
 				babel-preset-vue *strictly speaking this pack is not needed as other standard presets will cover the bases but declared in their babel config nevertheless
 		vue-loader
+			vue-template-compiler
+		pug-plain-loader * double-check what is using this
+
+## Jest
+	jest
+		babel-jest
+		babel-core: ^7.0.0-bridge.0
